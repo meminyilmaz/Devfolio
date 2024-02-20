@@ -1,0 +1,28 @@
+﻿@model Devfolio.Models.TblSocialMedia
+@{
+    ViewBag.Title = "UpdateSocialMedia";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>UpdateSocialMedia</h2>
+
+<form method="post">
+
+    <label>Platform Id</label>
+    <input type="text" class="form-control" name="SocialMediaID" value="@Model.SocialMediaID"/>
+    <br />
+    <label>Platform Adı</label>
+    <input type="text" class="form-control" name="PlatformName" value="@Model.PlatformName"/>
+    <br />
+    <label>Icon URL</label>
+    <input type="text" class="form-control" name="IconUrl" value="@Model.IconUrl"/>
+    <br />
+    <label>Redirect URL</label>
+    <input type="text" class="form-control" name="RedirectUrl" value="@Model.RedirectUrl"/>
+    <br />
+    <label>Durum</label>
+    <input type="text" class="form-control" name="Status" value="@Model.Status"/>
+    <br />
+    <button class="btn btn-info">Sosyal Media Ekle</button>
+
+</form>

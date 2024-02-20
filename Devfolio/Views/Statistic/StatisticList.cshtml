@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "StatisticList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Index</h2>
+
+<Div class="alert alert-danger">Kategori Sayısı: @ViewBag.categoryCount</Div>
+<Div class="alert alert-warning">Proje Sayısı: @ViewBag.projectCount</Div>
+<Div class="alert alert-dark">Yetenek Sayısı: @ViewBag.skillCount</Div>
+<Div class="alert alert-warning">Hizmet Sayısı: @ViewBag.serviceCount</Div>
+<Div class="alert alert-danger">Adres Sayısı: @ViewBag.addressCount</Div>
+<Div class="alert alert-dark">Ortalama Yetenek Puanı: @ViewBag.skillAvgValue</Div>
+<Div class="alert alert-primary">Son Eklenen Yetenek: @ViewBag.lastSkillTitleName</Div>
+<Div class="alert alert-dark">İlk Eklenen Hizmet: @ViewBag.firstServiceTitleName</Div>
+<Div class="alert alert-primary">Asp.net core Sayısı: @ViewBag.coreCategoryProjectCount</Div>
+<Div class="alert alert-danger">Flutter Mobil Sayısı: @ViewBag.flutterCategoryProjectCount</Div>
